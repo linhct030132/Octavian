@@ -355,14 +355,98 @@ html.disable-scroll {
     visibility: visible;
 }
 
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 1;
+    color: #fff;
+}
+
+.close-btn i {
+    transition: all ease .3s;
+
+}
+
+.close-btn:hover i {
+    color: #ff4539;
+    font-size: 25px;
+    transition: all ease-in .3s;
+}
+
+.search-form {
+    position: absolute;
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    transition: all ease-in-out 0.25s;
+}
+
+.search-form .search-field {
+    width: 100%;
+    font-size: 22px;
+    margin-bottom: 0;
+    background-color: #ebebeb;
+    border-radius: 40px;
+    padding: 17px 40px;
+    height: 80px;
+}
+
+.search-form .search-btn {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    border: none;
+    width: 64px;
+    height: 80px;
+}
+
+.search-form .search-btn i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 45%;
+    width: 100%;
+    color: #999;
+    font-size: 24px;
+    stroke: none;
+    stroke-width: 4px;
+    transition: ease .3s;
+}
+
+.search-form .search-btn:hover i {
+    color: #4a44f2;
+}
+
 /* CONTENT */
 
 .content {
     position: relative;
     margin-bottom: 200px;
+    height: 1080px;
 }
 
-.content > img {
+.content .bg-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    width: 1900px;
+    height: 1080px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    transform-origin: 50% 50%;
+    opacity: 1;
+    transform: translate(0px, 0px);
+    visibility: visible;
+}
+
+.content .bg-content > img {
     width: 100%;
 }
 
@@ -446,7 +530,7 @@ html.disable-scroll {
 
 .analysis-box .analysis-left {
     display: flex;
-    width: 370px;
+    width: 40%;
     margin-right: 70px;
 }
 
@@ -540,7 +624,6 @@ html.disable-scroll {
 
 .review-left {
     display: flex;
-    justify-content: center;
 }
 
 .review-left .review-txt {
@@ -549,6 +632,7 @@ html.disable-scroll {
 
 .review-box .review-img {
     margin-right: -32%;
+    width: 100%;
 }
 
 .review-txt h2 {
@@ -635,7 +719,6 @@ html.disable-scroll {
 }
 
 .customer-img img {
-    width: 100%;
 }
 
 /* TEAM */
