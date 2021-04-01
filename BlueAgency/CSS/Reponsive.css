@@ -1,0 +1,82 @@
+
+@media (min-width:1000px) {
+  .banner {
+  }
+
+  .container .banner-ct h1{
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1000px) {
+}
+
+@media (min-width: 580px) and (max-width: 720px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 580px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  .menu-open-button {
+    background-color: #eeeeee;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform ease-out 200ms;
+  }
+
+  .lines {
+    background-color: #fff;
+    display: block;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12.5px;
+    margin-top: -1.5px;
+    transition: transform 200ms;
+  }
+
+  .line-1 {
+    transform: translate3d(0, -8px, 0);
+  }
+
+  .line-3 {
+    transform: translate3d(0, 8px, 0);
+  }
+
+  .menu-open:checked + .menu-open-button {
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+  }
+
+  .menu-open:checked + .menu-open-button .line-1 {
+    transform: translate3d(0, 0, 0) rotate(-45deg);
+  }
+
+  .menu-open:checked + .menu-open-button .line-2 {
+    transform: translate3d(0, 0, 0.5px) scale(0, 1);
+  }
+
+  .menu-open:checked + .menu-open-button .line-3 {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+  }
+}
