@@ -8,7 +8,7 @@ window.onscroll = function () {
   var scrollToTop = document.querySelector(".scroll-to-top");
 
 
-  console.log(document.documentElement.scrollTop);
+  // console.log(document.documentElement.scrollTop);
 
   if (document.documentElement.scrollTop >= 50) {
     navElement.style.height = "80px";
@@ -130,4 +130,6 @@ var preLoader = function() {
       });
   }
 };
+
+
 
