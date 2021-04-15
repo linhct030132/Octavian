@@ -8,7 +8,7 @@ window.onscroll = function () {
   var scrollToTop = document.querySelector(".scroll-to-top");
 
 
-  console.log(document.documentElement.scrollTop);
+  // console.log(document.documentElement.scrollTop);
 
   if (document.documentElement.scrollTop >= 50) {
     navElement.style.height = "80px";
@@ -86,10 +86,18 @@ $(document).ready(function () {
   });
 
   //Resize
+  // var bgWidth = $('.bg-content').width()
+  // var contentBG = $('.bg-content')
 
-  
+  // $(window).resize(function() {
+    
+    //     console.log(sizeWidth)
+    
+    //     contentBG.css('left',  (sizeWidth - bgWidth)/2 + 'px')
+    //   })
+    
     var sizeWidth = $(window).width()
-     if (sizeWidth) {
+    if (sizeWidth) {
        var contentBG = $('.bg-content')
        contentBG.css('left',  (sizeWidth - 1914)/2 + 'px')
      }
@@ -99,7 +107,9 @@ $(document).ready(function () {
       contentBG.css('left',  (sizeWidth - 1914)/3 + 'px')
     }
 
-    //Animated when scroll
+    
+
+    // Animated when scroll
 
 
 

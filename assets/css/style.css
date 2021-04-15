@@ -70,6 +70,15 @@ li {
     vertical-align: middle;
 }
 
+.toggle {
+    display: none;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+}
+
 .nav-bar .menu .menu-layout{
     display: flex;    
     align-items: center;
@@ -133,7 +142,7 @@ li {
     border-radius: 10px;
     padding: 40px 0;
     left: 0;
-    width: 1170px;
+    width: 100%;
     opacity: 0;
     visibility: hidden;
     z-index: 9999;
@@ -217,7 +226,6 @@ li {
 .sub-menu .sub-menu-item:hover a::after {
     width: 100%;
 }
-
 
 .second-menu-overlay.show {
     opacity: 1;
@@ -311,7 +319,7 @@ html.disable-scroll {
     font-size: 30px;
 }
 
-.second-menu-item .arrow::after {
+.second-menu-item .arrow::after { 
     content: '+';
     position: absolute;
     top: 0;
