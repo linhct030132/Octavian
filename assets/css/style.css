@@ -595,6 +595,7 @@ html.disable-scroll {
     font-weight: 800;
     font-size: 20px;
     line-height: 26px;
+    color: #393e46;
 }
 
 .analysis-item h3 {
@@ -891,7 +892,7 @@ html.disable-scroll {
 /* CONTACT */
 
 #contact {
-    background-image: url('/assets/img/contact/contact-bg.jpg');
+    background-image: url('https://ninzio.com/octavian/wp-content/uploads/2020/06/bg-contact-2.jpg?id=505');
     background-position: center;
     background-size: cover;
     padding-bottom: 215px;

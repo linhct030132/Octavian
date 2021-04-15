@@ -47,17 +47,17 @@ $(document).ready(function () {
   $(".second-menu-btn").click(function () {
     $(".second-menu-overlay").addClass("show");
     $("html").addClass("disable-scroll");
-    $(".second-menu").animate({ right: "0px" }, 300, "easeInOutExpo");
+    $(".second-menu").animate({ right: "0px" }, 300);
   });
 
   $(".second-menu-overlay").click(function () {
     $(".second-menu-overlay").removeClass("show");
     $("html").removeClass("disable-scroll");
-    $(".second-menu").animate({ right: "-600px" }, 300, "easeInOutExpo");
+    $(".second-menu").animate({ right: "-600px" }, 300);
   });
 
   $(".close-menu").click(function () {
-    $(".second-menu").animate({ right: "-600px" }, 300, "easeInOutExpo");
+    $(".second-menu").animate({ right: "-600px" }, 300);
     $("html").removeClass("disable-scroll");
     $(".second-menu-overlay").removeClass("show");
   });
@@ -140,4 +140,6 @@ var preLoader = function() {
       });
   }
 };
+
+
 
