@@ -15,9 +15,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Octavian</title>
 </head>
 
@@ -269,7 +271,7 @@
                   </button>
                 </form>
               </div>
-              
+
               <li class="menu-item second-menu-btn">
                 <i class="fas fa-bars"></i>
               </li>
@@ -430,7 +432,7 @@
             </div>
           </div>
           <div class="content-right">
-            <img src="./assets/img/header-img/header-img.png" alt="" class="fadeInUp show-item delay-07"/>
+            <img src="./assets/img/header-img/header-img.png" alt="" class="fadeInUp show-item delay-07" />
           </div>
         </div>
       </div>
@@ -441,7 +443,7 @@
     <div id="analysis">
       <div class="container">
         <div class="analysis-box">
-          <div class="analysis-left">
+          <div class="analysis-left" data-aos="fade-up" data-aos-duration="3000">
             <div class="analysis-txt">
               <h2>Analyst specialists</h2>
               <p>
@@ -455,26 +457,26 @@
             </div>
           </div>
           <ul class="analysis-layout">
-            <li class="analysis-item">
+            <li class="analysis-item" data-aos="fade-up" data-aos-duration="3000">
               <img src="./assets/img/analysis/analytics-1.png" alt="" />
               <h3>
                 <span>Updated Results</span>
               </h3>
             </li>
-            <li class="analysis-item">
+            <li class="analysis-item" data-aos="fade-up" data-aos-duration="3000">
               <img src="./assets/img/analysis/analytics-2.png" alt="" />
               <h3>
                 <span>Rate of Return</span>
               </h3>
             </li>
-            <li class="analysis-item">
+            <li class="analysis-item" data-aos="fade-up" data-aos-duration="3000">
               <img src="./assets/img/analysis/analytics-3.png" alt="" />
               <h3>
                 <span>Prioritized Data</span>
               </h3>
             </li>
 
-            <li class="analysis-item">
+            <li class="analysis-item" data-aos="fade-up" data-aos-duration="3000">
               <img src="./assets/img/analysis/analytics-4.png" alt="" />
               <h3>
                 <span>Optimized Metrics</span>
@@ -490,10 +492,11 @@
     <div id="multiple">
       <div class="container">
         <div class="multiple-box">
-          <div class="multiple-img">
+          <div class="multiple-img" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-in-sine">
             <img src="./assets/img/multiple/multiple.jpg" alt="" />
           </div>
-          <div class="multiple-right">
+          <div class="multiple-right" data-aos="fade-left" data-aos-duration="3000"
+          data-aos-easing="ease-in-sine">
             <div class="multiple-txt">
               <h2>Even in the Smallest details of the Analytics</h2>
               <p>
@@ -516,7 +519,8 @@
     <div id="review">
       <div class="container">
         <div class="review-box">
-          <div class="review-left">
+          <div class="review-left" data-aos="fade-right" data-aos-duration="3000"
+          data-aos-easing="ease-in-sine">
             <div class="review-txt">
               <h2>Review the custom Demo</h2>
               <p>
@@ -529,7 +533,8 @@
               </a>
             </div>
           </div>
-          <div class="review-img">
+          <div class="review-img" data-aos="fade-left" data-aos-duration="3000"
+          data-aos-easing="ease-in-sine">
             <img src="./assets/img/review/image-macbook-2.jpg" alt="" />
           </div>
         </div>
@@ -541,14 +546,17 @@
     <div id="customer-review">
       <div class="container">
         <div class="title">
-          <h2>See our Customers’ Reviews</h2>
-          <p>
+          <h2 data-aos="fade-up" data-aos-duration="3000" 
+          data-aos-anchor-placement="top-bottom">See our Customers’ Reviews</h2>
+          <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500"
+          data-aos-anchor-placement="top-bottom">
             Integer eu metus at orci scelerisque rutrum. Vivamus condimentu
             ipsum vitae iaculis cursus, turpis nisl.
           </p>
         </div>
         <div class="customer-box">
-          <div class="customer-slider">
+          <div class="customer-slider" data-aos="fade-left" data-aos-duration="3000"
+          data-aos-easing="ease-in-sine">
             <div class="customer-1">
               <div class="customer-txt">
                 <p>
@@ -592,7 +600,8 @@
               </div>
             </div>
           </div>
-          <div class="customer-img">
+          <div class="customer-img" data-aos="fade-right" data-aos-duration="3000"
+          data-aos-easing="ease-in-sine">
             <img src="./assets/img/customer/customer-img.jpg" alt="" />
           </div>
         </div>
@@ -606,7 +615,8 @@
         <div class="team-box">
           <div class="team-img">
             <div class="colummn-inner">
-              <div class="team-1">
+              <div class="team-1" data-aos="fade-up" data-aos-duration="3000"
+              data-aos-anchor-placement="center-bottom">
                 <img src="./assets/img/team/team-2.jpg" alt="" />
                 <div class="info-wrap">
                   <h3 class="team-name">
@@ -627,7 +637,8 @@
               </div>
             </div>
             <div class="colummn-inner">
-              <div class="team-1">
+              <div class="team-1" data-aos="fade-up" data-aos-duration="3000"
+              data-aos-anchor-placement="center-bottom">
                 <img src="./assets/img/team/team-1.jpg" alt="" />
                 <div class="info-wrap">
                   <h3 class="team-name">
@@ -646,7 +657,8 @@
                   </div>
                 </div>
               </div>
-              <div class="team-1">
+              <div class="team-1" data-aos="fade-up" data-aos-duration="3000"
+              data-aos-anchor-placement="center-bottom">
                 <img src="./assets/img/team/team-3.jpg" alt="" />
                 <div class="info-wrap">
                   <h3 class="team-name">
@@ -669,12 +681,15 @@
           </div>
           <div class="team-right">
             <div class="team-txt">
-              <h2>Our team will be Happy to help you</h2>
-              <p>
+              <h2 data-aos="fade-up" data-aos-duration="3000"
+              data-aos-anchor-placement="center-bottom">Our team will be Happy to help you</h2>
+              <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500"
+              data-aos-anchor-placement="center-bottom">
                 Phasellus pulvinar iaculis nunc at placerat. Sed porta
                 sollicitudin eros, vel sagittis turpis consequat nec.
               </p>
-              <a href="#" class="btn-started btn">
+              <a href="#" class="btn-started btn" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000"
+              data-aos-anchor-placement="center-bottom">
                 Get Started
                 <span class="hover-effect"></span>
               </a>
@@ -689,13 +704,16 @@
     <div id="partners">
       <div class="container">
         <div class="title">
-          <h2>Join more than 1000+ Partners</h2>
-          <p>
+          <h2 data-aos="fade-up" data-aos-duration="3000"
+          data-aos-anchor-placement="center-bottom">Join more than 1000+ Partners</h2>
+          <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500"
+          data-aos-anchor-placement="center-bottom">
             Integer eu metus at orci scelerisque rutrum. Vivamus condimentu
             ipsum vitae iaculis cursus, turpis nisl.
           </p>
         </div>
-        <div class="logos-partners">
+        <div class="logos-partners" ata-aos="fade-up" data-aos-duration="3000"
+        data-aos-anchor-placement="center-bottom">
           <div class="partners-img">
             <img src="./assets/img/partners/shape 11.jpg" alt="" />
           </div>
@@ -714,24 +732,30 @@
     <div id="contact">
       <div class="container">
         <div class="title">
-          <h2>Contact us to Grow your Business</h2>
-          <p>
+          <h2 data-aos="fade-up" data-aos-duration="3000"
+          data-aos-anchor-placement="center-bottom">Contact us to Grow your Business</h2>
+          <p data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500"
+          data-aos-anchor-placement="center-bottom">
             Integer eu metus at orci scelerisque rutrum. Vivamus condimentu
             ipsum vitae iaculis cursus, turpis nisl.
           </p>
         </div>
         <form action="" class="contact-form">
-          <div class="form-item">
+          <div class="form-item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000"
+          data-aos-anchor-placement="center-bottom">
             <input type="text" placeholder="Author" id="fullName" />
           </div>
-          <div class="form-item">
+          <div class="form-item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1500"
+          data-aos-anchor-placement="center-bottom">
             <input type="text" placeholder="E.g.. abc@gmail.com" id="email" />
           </div>
-          <div class="form-item">
+          <div class="form-item" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2000"
+          data-aos-anchor-placement="center-bottom">
             <textarea name="message" id="message" cols="40" rows="10" style="height: 100px;"
               placeholder="Your message"></textarea>
           </div>
-          <a href="#" class="btn-message btn-started">
+          <a href="#" class="btn-message btn-started" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2500"
+          data-aos-anchor-placement="center-bottom">
             Send Message
             <span class="hover-effect"></span>
         </form>
@@ -832,5 +856,8 @@
 </body>
 <script src="./assets/javascript/main.js"></script>
 <script src="./assets/javascript/observers.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
