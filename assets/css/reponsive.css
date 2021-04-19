@@ -1,13 +1,18 @@
 @media only screen and (max-width: 900px) {
-    .menu {
+    
+    .menu-layout .menu-item:nth-child(1),
+    .menu-layout .menu-item:nth-child(2),
+    .menu-layout .menu-item:nth-child(3),
+    .menu-layout .menu-item:nth-child(4),
+    .menu-layout .menu-item:nth-child(5) {
         display: none;
-        visibility: hidden;
     }
 
-    .toggle {
-        display: block;
-        
-      }
+    .second-menu {
+        padding: 150px 90px 50px 90px;
+    }
+
+    
     
       .menu-open {
         display: none;
@@ -60,6 +65,13 @@
       .menu-open:checked + .menu-open-button .line-3 {
         transform: translate3d(0, 0, 0) rotate(45deg);
       }
+
+      .content-right {
+          display: none;
+      }
+      .team-box {
+          flex-direction: column;
+      }
 }
 
 /* PC width >= 1200px */ 
@@ -69,7 +81,7 @@
     }
 
     .btn-started {
-        padding: 12px 60px;
+        padding: 12px 60px !important;
     }
 
     .content-txt span {
@@ -149,14 +161,12 @@
         margin-bottom: 60px;
     }
 
-    .team-box {
-        flex-direction: column;
+    .team-right {
+        margin-left: 0px;
     }
-}
 
 /* Tablet width>728px and width<1024px  */
-@media only screen and (min-width: 728px) and (max-width: 1024px) {
-
+@media only screen and (max-width: 1024px) {
 
     /* Content */
     .content .box .content-left {
@@ -172,8 +182,105 @@
 
 /* Mobile width < 728px */
 @media only screen and (max-width: 728px) {
-    
-}
 
+    h2 {
+        font-size: 2em !important;
+    }
+
+    .second-menu {
+        padding: 150px 48px 50px 48px;
+    }
+
+    .second-menu-item a {
+        font-size: 24px;
+    }
+
+    #content {
+        height: 609px;
+        margin-bottom: 50px;
+    }
+
+    #content .bg-content {
+        height: 609px;
+        width: 1024px;
+        left: -200px !important;
+    }
+    .content-txt {
+        width: 250px;
+        margin: 0px;
+    }
+
+    .content-txt span {
+        font-size: 31px;
+    }
+
+    .box {
+        top: 170px;
+    }
+
+    .content-txt p {
+        font-size: 18px;
+        width: 280px;
+        padding: 25px 0;
+
+    }
+
+    .btn-started {
+        font-size: 18px;
+        padding: 7px 40px;
+    }
+
+    .analysis-layout {
+        flex-direction: column;
+    }
+
+    .multiple-img  img {
+        width: 100%;
+    }
+
+    .btn {
+        padding: 15px 50px !important;
+    }
+
+    .customer-slider .customer-txt {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .customer-box .customer-slider {
+        height: 385px;
+    }
+
+    .customer-img img {
+        width: 100%;
+    }
+
+    .customer-img {
+        width: auto;
+        padding: 0;
+    }
+
+    .team-img {
+        flex-direction: column;
+    }
+
+    .colummn-inner img {
+        width: 100%;
+    }
+
+    .partners-img img {
+        width: 100%;
+    }
+
+    .widget-box {
+        flex-direction: column;
+    }
+
+    .widget-2 {
+        padding-top: 40px;
+        text-align: left;
+        padding-left: 0;
+    }
+}
 
 

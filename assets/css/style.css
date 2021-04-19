@@ -73,8 +73,8 @@ li {
 .toggle {
     display: none;
     position: absolute;
-    top: 0%;
-    right: 10%;
+    top: 50%;
+    right: 0;
     width: 40px;
     height: 40px;
 }

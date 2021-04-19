@@ -85,6 +85,10 @@ $(document).ready(function () {
     $("html").removeClass("disable-scroll");
   });
 
+  //Toggle- Reponsive- Menu
+
+  
+
   //Resize
   // var bgWidth = $('.bg-content').width()
   // var contentBG = $('.bg-content')
